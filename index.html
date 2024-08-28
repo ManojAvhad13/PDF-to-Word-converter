@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF to Word Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>PDF to Word Converter</h1>
+        <form id="uploadForm">
+            <label for="pdfFile">Upload PDF File</label>
+            <input type="file" id="pdfFile" accept=".pdf">
+            <button type="submit">Convert to Word</button>
+        </form>
+        <div id="output"></div>
+    </div>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <p>Converted PDF successfully!</p>
+            <button id="downloadButton">Download Word File</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
